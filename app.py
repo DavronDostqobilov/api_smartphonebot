@@ -40,3 +40,6 @@ def home():
     dp.add_handler(CallbackQueryHandler(menu, pattern="bosh_menu"))
     dp.add_handler(CallbackQueryHandler(Company_Information, pattern="Company Information"))
     dp.add_handler(CallbackQueryHandler(About_Us, pattern="Orqaga"))
+    return 'ok'
+if __name__ == "__main__":
+    app.run(debug=True)
