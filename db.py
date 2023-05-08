@@ -3,7 +3,7 @@ import requests
 
 class DB:
     def __init__(self):
-        self.base_url = "http://davron0703qwerty1234.pythonanywhere.com/"
+        self.base_url = "http://davron0703qwerty1234.pythonanywhere.com"
 
     def get_tables(self):
         """
