@@ -9,6 +9,9 @@ TOKEN='6244092180:AAH_10MCMX4wAESk6TTp-iboI1EMSe6FeZ8'
 bot = telegram.Bot(TOKEN)
 
 app = Flask(__name__)
+@app.route("/")
+def ishladi():
+    return "Bot ishladi"
 @app.route("/webhook", methods=["POST"])
 def home():
     dp = Dispatcher(bot, None, workers=0)
